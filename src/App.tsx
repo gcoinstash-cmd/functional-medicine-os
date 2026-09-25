@@ -257,7 +257,7 @@ export default function App() {
       </section>
 
       {/* Protocols Section */}
-      <section id="protocols" className="py-20 px-4 sm:px-8 bg-[#090d13] border-t border-slate-800">
+      <section id="protocols" className="py-20 px-4 sm:px-8 bg-[#090d13] border-t border-slate-800 scroll-mt-20">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
@@ -347,7 +347,7 @@ export default function App() {
       </section>
 
       {/* Biomarker Architecture / Technology */}
-      <section id="biomarkers" className="py-20 px-4 sm:px-8 bg-[#07090c]">
+      <section id="biomarkers" className="py-20 px-4 sm:px-8 bg-[#07090c] scroll-mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
@@ -427,6 +427,88 @@ export default function App() {
                 >
                   CALCULATE PROTOCOL ROADMAP
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Physicians Section */}
+      <section id="physicians" className="py-20 px-4 sm:px-8 bg-[#090d13] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
+              CLINICAL LEADERSHIP
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-4">
+              Institute for Functional Medicine (IFM) Certified Physicians
+            </h2>
+            <p className="text-slate-400 text-sm mt-3">
+              Double board-certified medical doctors integrating root-cause pathology with genomics and clinical longevity.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-emerald-400 uppercase">INTERNAL MEDICINE // IFMCP</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Julian Hayes, M.D.</h4>
+              <p className="text-xs text-slate-400 mt-2">Stanford Medical School • Lead Longevity Investigator • Metabolic Sirtuin & Telomere Reversal.</p>
+            </div>
+
+            <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1594824813596-f089602a8eb2?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-cyan-400 uppercase">ENDOCRINOLOGY // ANTI-AGING</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Evelyn Vance, M.D.</h4>
+              <p className="text-xs text-slate-400 mt-2">Johns Hopkins Medicine • BHRT & Adrenal Axis Lead • Autoimmune Remission Specialist.</p>
+            </div>
+
+            <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
+              <span className="text-[10px] font-mono text-indigo-400 uppercase">GASTROENTEROLOGY // MICROBIOME</span>
+              <h4 className="text-lg font-bold text-white mt-1">Dr. Marcus Thorne, M.D.</h4>
+              <p className="text-xs text-slate-400 mt-2">Harvard Medical Fellow • Gut-Brain Axis & Intestinal Permeability Protocol Director.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Telehealth Section */}
+      <section id="telehealth" className="py-20 px-4 sm:px-8 bg-[#07090c] border-t border-slate-800 scroll-mt-20">
+        <div className="max-w-7xl mx-auto bg-[#0c1017] border border-emerald-900/40 rounded-3xl p-8 sm:p-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
+                50-STATE TELEHEALTH
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-4">
+                At-Home Blood Draw & Encrypted Telehealth
+              </h2>
+              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                Licensed mobile phlebotomists dispatched directly to your home or executive suite. High-definition 45-minute video reviews with your dedicated physician.
+              </p>
+              <div className="mt-6 flex gap-4">
+                <button
+                  onClick={() => setIsBookModalOpen(true)}
+                  className="px-6 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-mono text-xs rounded-xl transition shadow-lg shadow-emerald-500/20"
+                >
+                  SCHEDULE AT-HOME PHLEBOTOMY
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl space-y-3 font-mono text-xs">
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Mobile Phlebotomy:</span>
+                <span className="text-white font-bold">50 U.S. States Doorstep Dispatch</span>
+              </div>
+              <div className="flex justify-between py-2 border-b border-slate-800">
+                <span className="text-slate-400">Lab Turnaround:</span>
+                <span className="text-emerald-400 font-bold">5–7 Business Days Complete Panel</span>
+              </div>
+              <div className="flex justify-between py-2">
+                <span className="text-slate-400">HIPAA Compliance:</span>
+                <span className="text-cyan-400 font-bold">End-to-End 256-Bit Encrypted Video</span>
               </div>
             </div>
           </div>
