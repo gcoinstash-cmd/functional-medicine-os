@@ -102,7 +102,7 @@ export default function App() {
         <span className="text-slate-600">•</span>
         <button 
           onClick={() => setIsAdminOpen(true)}
-          className="text-emerald-400 hover:text-emerald-300 font-mono text-[11px] underline ml-2 font-semibold"
+          className="text-emerald-400 hover:text-emerald-300 font-mono text-xs font-semibold underline ml-2 font-semibold"
         >
           [ STAFF PORTAL ]
         </button>
@@ -119,7 +119,7 @@ export default function App() {
               <span className="font-extrabold tracking-wider text-lg text-white font-mono flex items-center gap-1.5">
                 AURA<span className="text-emerald-400">PROTOCOL</span>
               </span>
-              <p className="text-[10px] tracking-widest text-slate-400 uppercase font-mono">Functional Medicine & Longevity OS</p>
+              <p className="text-xs font-semibold tracking-wider tracking-widest text-slate-400 uppercase font-mono">Functional Medicine & Longevity OS</p>
             </div>
           </div>
 
@@ -206,7 +206,7 @@ export default function App() {
                     <div className="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
                     <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">LIVE TELEMETRY FEED</span>
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">SECURE TIER-3</span>
+                  <span className="text-xs text-slate-300 font-mono">SECURE TIER-3</span>
                 </div>
 
                 <div className="space-y-4">
@@ -286,7 +286,7 @@ export default function App() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f16] via-transparent to-black/40"></div>
-                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-[10px] font-mono text-emerald-400 uppercase">
+                    <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-md border border-slate-700/60 px-2.5 py-1 rounded-lg text-xs font-semibold tracking-wider font-mono text-emerald-400 uppercase">
                       {protocol.category}
                     </span>
                   </div>
@@ -299,13 +299,13 @@ export default function App() {
                         </h3>
                         <span className="font-mono font-bold text-emerald-400 text-sm">{protocol.price}</span>
                       </div>
-                      <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed mt-2">
+                      <p className="text-base text-zinc-200 leading-relaxed line-clamp-2 leading-relaxed mt-2">
                         {protocol.tagline}
                       </p>
                     </div>
 
                     <div className="space-y-2 pt-2 border-t border-slate-800/80">
-                      <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Key Biomarkers:</span>
+                      <span className="text-xs font-semibold font-mono text-slate-400 uppercase tracking-wider block">Key Biomarkers:</span>
                       <ul className="text-xs space-y-1 text-slate-300">
                         {protocol.biomarkers.slice(0, 3).map((bio, idx) => (
                           <li key={idx} className="flex items-center space-x-1.5">
@@ -367,7 +367,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">Full-Spectrum Phlebotomy & Cellular Metabolomics</h4>
-                  <p className="text-xs text-slate-400 mt-1">120+ unique biomarkers analyzed at CLIA-certified national reference laboratories.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">120+ unique biomarkers analyzed at CLIA-certified national reference laboratories.</p>
                 </div>
               </div>
 
@@ -377,7 +377,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">Real-Time Wearable Biomarker Synchronization</h4>
-                  <p className="text-xs text-slate-400 mt-1">Direct API integration with Oura Ring, Whoop 4.0, Dexcom CGM, and Apple HealthKit.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">Direct API integration with Oura Ring, Whoop 4.0, Dexcom CGM, and Apple HealthKit.</p>
                 </div>
               </div>
 
@@ -387,7 +387,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">Board-Certified Longevity Concierge Oversight</h4>
-                  <p className="text-xs text-slate-400 mt-1">Continuous physician oversight with bi-monthly telemetry check-ins and protocol titration.</p>
+                  <p className="text-base text-zinc-200 leading-relaxed mt-1">Continuous physician oversight with bi-monthly telemetry check-ins and protocol titration.</p>
                 </div>
               </div>
             </div>
@@ -395,12 +395,12 @@ export default function App() {
 
           <div className="lg:col-span-6 bg-[#0b0f16] border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
             <h3 className="text-lg font-bold text-white">Instant Intake & Protocol Calculator</h3>
-            <p className="text-xs text-slate-400">Select your focus areas to receive a custom protocol recommendation:</p>
+            <p className="text-base text-zinc-200 leading-relaxed">Select your focus areas to receive a custom protocol recommendation:</p>
 
             <div className="space-y-4">
               <div>
-                <label className="text-xs font-mono text-slate-300 block mb-2">Primary Optimization Goal:</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-emerald-500 outline-none">
+                <label className="text-sm font-semibold font-mono text-slate-300 block mb-2">Primary Optimization Goal:</label>
+                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-emerald-500 outline-none">
                   <option>Cellular Reversal & Epigenetics (Age 35-65)</option>
                   <option>Executive Focus, Mood & Sleep Architecture</option>
                   <option>Athletic Endurance, Injury Repair & Peptides</option>
@@ -409,12 +409,12 @@ export default function App() {
               </div>
 
               <div>
-                <label className="text-xs font-mono text-slate-300 block mb-2">Intake Preference:</label>
+                <label className="text-sm font-semibold font-mono text-slate-300 block mb-2">Intake Preference:</label>
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="p-3 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 rounded-xl text-xs font-bold text-center">
+                  <button className="p-3 bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 rounded-xl text-base font-semibold min-h-[44px] font-bold text-center">
                     In-Clinic Concierge
                   </button>
-                  <button className="p-3 bg-slate-900 border border-slate-700 hover:border-slate-600 text-slate-300 rounded-xl text-xs font-bold text-center">
+                  <button className="p-3 bg-slate-900 border border-slate-700 hover:border-slate-600 text-slate-300 rounded-xl text-base font-semibold min-h-[44px] font-bold text-center">
                     At-Home Phlebotomy Kit
                   </button>
                 </div>
@@ -451,23 +451,23 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-emerald-400 uppercase">INTERNAL MEDICINE // IFMCP</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400 uppercase">INTERNAL MEDICINE // IFMCP</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Julian Hayes, M.D.</h4>
-              <p className="text-xs text-slate-400 mt-2">Stanford Medical School • Lead Longevity Investigator • Metabolic Sirtuin & Telomere Reversal.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Stanford Medical School • Lead Longevity Investigator • Metabolic Sirtuin & Telomere Reversal.</p>
             </div>
 
             <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1594824813596-f089602a8eb2?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-cyan-400 uppercase">ENDOCRINOLOGY // ANTI-AGING</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-cyan-400 uppercase">ENDOCRINOLOGY // ANTI-AGING</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Evelyn Vance, M.D.</h4>
-              <p className="text-xs text-slate-400 mt-2">Johns Hopkins Medicine • BHRT & Adrenal Axis Lead • Autoimmune Remission Specialist.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Johns Hopkins Medicine • BHRT & Adrenal Axis Lead • Autoimmune Remission Specialist.</p>
             </div>
 
             <div className="p-6 bg-[#0c1017] border border-slate-800 rounded-2xl">
               <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Physician" className="w-full h-64 object-cover rounded-xl mb-4" />
-              <span className="text-[10px] font-mono text-indigo-400 uppercase">GASTROENTEROLOGY // MICROBIOME</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-indigo-400 uppercase">GASTROENTEROLOGY // MICROBIOME</span>
               <h4 className="text-lg font-bold text-white mt-1">Dr. Marcus Thorne, M.D.</h4>
-              <p className="text-xs text-slate-400 mt-2">Harvard Medical Fellow • Gut-Brain Axis & Intestinal Permeability Protocol Director.</p>
+              <p className="text-base text-zinc-200 leading-relaxed mt-2">Harvard Medical Fellow • Gut-Brain Axis & Intestinal Permeability Protocol Director.</p>
             </div>
           </div>
         </div>
@@ -523,7 +523,7 @@ export default function App() {
               <Dna className="w-4 h-4 text-emerald-400" />
               <span className="font-bold text-white font-mono tracking-wider">AURA PROTOCOL OS</span>
             </div>
-            <p className="text-slate-400 text-[11px] leading-relaxed">
+            <p className="text-slate-400 text-xs font-semibold leading-relaxed">
               Clinical-grade Operating System designed for modern functional medicine, longevity clinics, and cellular optimization practices.
             </p>
           </div>
@@ -550,7 +550,7 @@ export default function App() {
 
           <div className="space-y-3">
             <h5 className="font-mono text-white text-xs uppercase tracking-wider">Staff Administration</h5>
-            <p className="text-[11px] text-slate-400">
+            <p className="text-xs font-semibold text-slate-400">
               Access the clinical telemetry portal with the 1-click bypass passkey:
             </p>
             <button
@@ -562,7 +562,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <div className="max-w-7xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-slate-300">
           <div>© 2026 Aura Protocol OS. All Rights Reserved. Turnkey Clinical Operating System.</div>
           <div className="mt-2 sm:mt-0 font-mono text-emerald-400">Passkey: functional2026</div>
         </div>
@@ -590,29 +590,29 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-white">Book Initial Clinical Intake</h3>
-                    <p className="text-xs text-slate-400">Select consultation time and physician review</p>
+                    <p className="text-base text-zinc-200 leading-relaxed">Select consultation time and physician review</p>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Full Legal Name</label>
-                  <input required placeholder="Elena Rostova" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-emerald-500 outline-none" />
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Full Legal Name</label>
+                  <input required placeholder="Elena Rostova" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-emerald-500 outline-none" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Email</label>
-                    <input required type="email" placeholder="patient@example.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-emerald-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Email</label>
+                    <input required type="email" placeholder="patient@example.com" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-emerald-500 outline-none" />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-slate-400 block mb-1">Phone</label>
-                    <input required type="tel" placeholder="+1 (555) 019-2834" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-emerald-500 outline-none" />
+                    <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Phone</label>
+                    <input required type="tel" placeholder="+1 (555) 019-2834" className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-emerald-500 outline-none" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-mono text-slate-400 block mb-1">Desired Intake Protocol</label>
-                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-sm text-white focus:border-emerald-500 outline-none">
+                  <label className="text-sm font-semibold font-mono text-slate-400 block mb-1">Desired Intake Protocol</label>
+                  <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-base min-h-[44px] text-white focus:border-emerald-500 outline-none">
                     <option>Cellular Epigenetic Reset ($2,450)</option>
                     <option>Neuro-Metabolic & Peptide Core ($1,850)</option>
                     <option>Microbiome & Autoimmune Defense ($1,650)</option>
@@ -622,7 +622,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-xl text-xs tracking-wider transition-all shadow-lg shadow-emerald-500/25 mt-4"
+                  className="w-full py-3.5 bg-emerald-500 hover:bg-emerald-400 text-black font-bold rounded-xl text-base font-semibold min-h-[44px] tracking-wider transition-all shadow-lg shadow-emerald-500/25 mt-4"
                 >
                   CONFIRM INTAKE APPOINTMENT
                 </button>
@@ -633,7 +633,7 @@ export default function App() {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h4 className="text-xl font-bold text-white">Intake Confirmed!</h4>
-                <p className="text-xs text-slate-400 max-w-xs mx-auto">
+                <p className="text-base text-zinc-200 leading-relaxed max-w-xs mx-auto">
                   Your clinical packet and lab requisition forms have been dispatched. Check your email for login credentials.
                 </p>
               </div>

@@ -49,17 +49,17 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white tracking-wide">CLINICAL OPERATING SYSTEM DOOR</h3>
-                <p className="text-xs text-slate-400">Aura Protocol Functional & Longevity Medicine Hub</p>
+                <p className="text-base text-zinc-200 leading-relaxed">Aura Protocol Functional & Longevity Medicine Hub</p>
               </div>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold font-mono text-emerald-400 uppercase tracking-wider mb-2">
                   Staff Access Passkey
                 </label>
                 <div className="relative">
-                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-500" />
+                  <Key className="absolute left-3 top-3.5 w-4 h-4 text-slate-300" />
                   <input
                     type="password"
                     value={passkey}
@@ -86,14 +86,14 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 <button
                   type="button"
                   onClick={autofillPasskey}
-                  className="py-3 px-4 bg-emerald-950/60 hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 font-mono text-xs rounded-xl transition-all"
+                  className="py-3 px-4 bg-emerald-950/60 hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 font-mono text-base font-semibold min-h-[44px] rounded-xl transition-all"
                 >
                   ⚡ Auto-Fill: functional2026
                 </button>
               </div>
             </form>
 
-            <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-slate-800 text-xs font-semibold text-slate-300 flex items-center justify-between">
               <span>Security Level: HIPAA Encrypted Tier-3</span>
               <span className="font-mono text-emerald-400">Auth Gate Active</span>
             </div>
@@ -107,10 +107,10 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-white">Live Patient & Longevity Registry</h4>
-                  <p className="text-xs text-slate-400">Cellular Analytics & Telehealth Intake Dashboard</p>
+                  <p className="text-base text-zinc-200 leading-relaxed">Cellular Analytics & Telehealth Intake Dashboard</p>
                 </div>
               </div>
-              <span className="px-2.5 py-1 text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center gap-1.5">
+              <span className="px-2.5 py-1 text-xs font-semibold tracking-wider font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
                 ACTIVE
               </span>
@@ -123,7 +123,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Stethoscope className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">142</div>
-                <div className="text-[10px] text-emerald-400 mt-1">↑ 18 this month</div>
+                <div className="text-xs font-semibold tracking-wider text-emerald-400 mt-1">↑ 18 this month</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -132,7 +132,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <Activity className="w-3.5 h-3.5 text-cyan-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">89</div>
-                <div className="text-[10px] text-cyan-400 mt-1">Full Genome / Epigenetic</div>
+                <div className="text-xs font-semibold tracking-wider text-cyan-400 mt-1">Full Genome / Epigenetic</div>
               </div>
 
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-xl">
@@ -141,7 +141,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                   <UserCheck className="w-3.5 h-3.5 text-purple-400" />
                 </div>
                 <div className="text-2xl font-bold text-white font-mono">7</div>
-                <div className="text-[10px] text-purple-400 mt-1">Next session in 12m</div>
+                <div className="text-xs font-semibold tracking-wider text-purple-400 mt-1">Next session in 12m</div>
               </div>
             </div>
 
@@ -153,21 +153,21 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                     <span className="font-semibold text-white">Elena Rostova</span>
                     <span className="text-slate-400 ml-2">NAD+ Infusion & Hormone Rebalance</span>
                   </div>
-                  <span className="text-emerald-400 font-mono text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">CONFIRMED</span>
+                  <span className="text-emerald-400 font-mono text-xs font-semibold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">CONFIRMED</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">David K. Vance</span>
                     <span className="text-slate-400 ml-2">Epigenetic Biological Age Panel</span>
                   </div>
-                  <span className="text-cyan-400 font-mono text-[11px] bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">LAB PROCESSING</span>
+                  <span className="text-cyan-400 font-mono text-xs font-semibold bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">LAB PROCESSING</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 bg-slate-950/60 rounded-lg border border-slate-800/80">
                   <div>
                     <span className="font-semibold text-white">Dr. Sarah Jenkins</span>
                     <span className="text-slate-400 ml-2">Peptide Optimization Protocol</span>
                   </div>
-                  <span className="text-purple-400 font-mono text-[11px] bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/20">DISPATCHED</span>
+                  <span className="text-purple-400 font-mono text-xs font-semibold bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/20">DISPATCHED</span>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="flex gap-2">
                 <button
                   onClick={onClose}
-                  className="px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-xl text-xs transition-all shadow-md"
+                  className="px-5 py-3 min-h-[44px] bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-xl text-base font-semibold min-h-[44px] transition-all shadow-md"
                 >
                   Close Console
                 </button>
